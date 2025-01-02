@@ -436,9 +436,9 @@ header {
     display: none;
 }
 
-.content-ipad {
+/*.content-ipad {
     display: none;
-}
+}*/
 
 .footer-banner {
     display: none;
@@ -497,7 +497,6 @@ display: block;
 .content-mobile {
     display: block;
     margin-top: 20px;
-    height: 160px;
 }
 
 .content-mobile__text p {
@@ -523,15 +522,24 @@ display: block;
 }
 
 
+.content-ipad {
+    display: block;
+ 
+
+
+    height: 160px;
+}
+
+
 .content-mobile {
     display: block;
 }
 
 .content-mobile__section {
     display: block;
-    max-width: 100%;
     border-radius: 8px;
     margin-top: 20px;
+
 }
 
 }
