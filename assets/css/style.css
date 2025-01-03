@@ -58,9 +58,16 @@ nav {
     display: none;
 }
 
-.footer-banner {
+.footer-banner__ipad {
     display: none;
 }
+
+.footer-banner__mobile {
+    display: none;
+}
+
+
+.footer-banner-icon__ipad
 
 .gic-mobile__header {
     display: none;
@@ -199,6 +206,23 @@ nav {
     max-width: 100%;
     border-radius: 5px;
   }
+
+
+  .footer-banner {
+    display: flex;
+    width: 132px;
+    height: 24px;
+    margin-top: -100px;
+   }
+
+    .footer-banner h3 {
+        margin: 0;
+        font-size: 16px;
+        color: var(--main-color);
+        font-family: "Old Standard TT", serif;
+        line-height: 24px;
+    }
+
   
 /* ipad section */
 
@@ -210,6 +234,14 @@ nav {
     .categories {
         display: none;
     }
+
+.footer-banner {
+    display: none;
+}
+
+.footer-banner__ipad {
+    display: none;
+}
 
     .content {
         display: none;
@@ -238,6 +270,16 @@ nav {
 .content-mobile {
     display: none;
 }
+
+.footer-banner__mobile {
+    display: none;
+}
+
+body {
+    padding: 0;
+   background-color: #f8f8f8; 
+}
+
 
 header {
     display: flex;
@@ -294,7 +336,7 @@ header {
 
 .ipad-title {
     display: flex;
-    
+
 }
 
 .gic-ipad {
@@ -312,6 +354,7 @@ header {
             font-weight: bold;
             color:var(--main-color);
             font-family: "Old Standard TT", serif;
+   
     }
 
    nav {
@@ -319,10 +362,11 @@ header {
         overflow-x: auto;
         scrollbar-width: none; 
         white-space: nowrap;
-        background-color: #ffffff;
+     /*   background-color: #ffffff;*/
         margin-top: 30px;
-        border-top: 1px solid #eaeaea;
-        border-bottom: 1px solid #eaeaea;
+    /*    border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;*/
+        margin-left: 20px;
     }
 
     nav a {
@@ -332,17 +376,17 @@ header {
         color: var(--third-color);
         font-family: "Old Standard TT", serif;
         font-weight: bold;
-        transition: background-color 0.3s;
+      /*  transition: background-color 0.3s;*/
     }
 
     nav a:hover {
         border: 2px solid var(--fived-color);
-        border-radius: 8px;
+        border-radius: 8px; 
     }
 
    .content-ipad {
         display: block;
-     
+
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -364,6 +408,7 @@ header {
         color: var(--third-color);
         line-height: 1.6;
         margin-top: 10px;
+        margin-left: 20px;
     }
 
     .content-ipad__section {
@@ -376,15 +421,15 @@ header {
         margin-top: 20px;
     }
 
-   .footer-banner {
-    display: block;
+   .footer-banner__ipad {
+    display: flex;
     width: 132px;
     height: 24px;
-    margin-top: 10px;
-    
+    margin-top: 30px;
+    margin-left: 10px;
    }
 
-    .footer-banner h3 {
+    .footer-banner__ipad h3 {
         margin: 0;
         font-size: 16px;
         color: var(--main-color);
@@ -396,7 +441,7 @@ header {
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:700px) {
 
 header {
     display: none;
@@ -444,6 +489,11 @@ header {
     display: none;
 }
 
+.footer-banner__ipad {
+    display: none;
+}
+
+
 .header-mobile {
 display: block;
    
@@ -463,7 +513,7 @@ display: block;
 
     width: 3px;
     height: 45px;
-    background-color: #cc1f1f;
+    background-color: #EAEAEA;
 }
 
     .logo-mobile {
@@ -506,20 +556,26 @@ display: block;
     margin-top: 10px;
 }
 
-.footer-banner-mobile {
-    display: block;
+
+.footer-banner__mobile {
+    display: flex;
     width: 132px;
     height: 24px;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
-.footer-banner-mobile h3 {
+.footer-banner__mobile h3 {
     margin: 0;
         font-size: 16px;
         color: var(--main-color);
         font-family: "Old Standard TT", serif;
         line-height: 24px;
-        margin-top: 10px;
+   
 }
+
+
+
 
 
 .content-ipad {
