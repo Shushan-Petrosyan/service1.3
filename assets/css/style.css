@@ -148,6 +148,9 @@ nav {
     color: var(--third-color);
     font-family: "Old Standard TT", serif;
     font-size: var(--font-size);
+    border: 2px solid transparent; 
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .categories-item:hover {
